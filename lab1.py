@@ -14,9 +14,11 @@ def more(text):
 url = 'http://google.com/'  # προσδιορισμός του url
 
 with requests.get(url) as response:  # το αντικείμενο response
-    html = response.text
-    print("\nRESPONSE HEADER")
-    more(html)
+##    html = response.text
+##    print("\nRESPONSE HEADER")
+##    more(html)
+
+    print(f"Website headers: {url} \n, {response.headers}\n\n")
 
 
     
