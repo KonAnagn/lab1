@@ -20,5 +20,12 @@ with requests.get(url) as response:  # το αντικείμενο response
 
     print(f"Website headers: {url} \n, {response.headers}\n\n")
 
+    if server:
+        print(f"Server: {server}")
+    else:
+        print("No server found")
+
+
+
 
     
