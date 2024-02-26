@@ -20,6 +20,8 @@ with requests.get(url) as response:  # το αντικείμενο response
 
     print(f"Website headers: {url} \n, {response.headers}\n\n")
 
+    server = response.headers.get("Server")
+
     if server:
         print(f"Server: {server}")
     else:
